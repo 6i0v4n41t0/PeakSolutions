@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".view.LoginFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="315dp"
+        android:layout_height="496dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="303dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:text="Email: "
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="282dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Digite seu Email"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tvSenha"
+                android:layout_width="303dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:text="Senha: "
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="282dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Digite sua Senha"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:backgroundTint="#639DAA"
+                android:layout_gravity="center"
+                android:text="Entre"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ou cadastre-se"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

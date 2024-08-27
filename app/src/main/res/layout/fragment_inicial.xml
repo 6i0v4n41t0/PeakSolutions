@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".view.InicialFragment"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btnProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Produtos"
+        android:textColor="#2B5B62"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnVendas"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Vendas"
+        android:textColor="#2B5B62"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnMateriais"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Materiais"
+        android:textColor="#2B5B62"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnEstoque"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Estoque"
+        android:textColor="#2B5B62"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
