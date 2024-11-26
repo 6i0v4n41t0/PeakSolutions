@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.CadastroProducaoFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="315dp"
+        android:layout_height="496dp"
+        android:background="@color/design_default_color_secondary"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="309dp"
+            android:layout_height="489dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvcadastroPodrucao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:text="CADASTRO DE PRODUÇÃO"
+                android:textAlignment="center"
+                android:textColor="#2B5B62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvSelectProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_camiseta"
+                        android:layout_gravity="center"
+                        style="@style/iconTint"/>
+                    <TextView
+                        android:id="@+id/tvSelectProduto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecione um produto"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvquantidade"
+                android:layout_width="298dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:text="Quantidade:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtQntd3"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Digite a quantidade"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnCadastroProducao"
+                android:layout_width="152dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#2B5B62"
+                android:text="Cadastrar"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnExcluirProducao"
+                android:layout_width="148dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#2B5B62"
+                android:text="Excluir"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

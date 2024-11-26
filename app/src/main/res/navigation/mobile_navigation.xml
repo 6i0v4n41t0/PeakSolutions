@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/entrarFragment">
+
+    <fragment
+        android:id="@+id/entrarFragment"
+        android:name="com.giovana.peaksolutions.view.EntrarFragment"
+        android:label="fragment_entrar"
+        tools:layout="@layout/fragment_entrar" />
+    <fragment
+        android:id="@+id/inicialFragment"
+        android:name="com.giovana.peaksolutions.view.InicialFragment"
+        android:label="fragment_inicial"
+        tools:layout="@layout/fragment_inicial" />
+    <fragment
+        android:id="@+id/produtosFragment"
+        android:name="com.giovana.peaksolutions.view.ProdutosFragment"
+        android:label="fragment_produtos"
+        tools:layout="@layout/fragment_produtos" />
+    <fragment
+        android:id="@+id/cadastroItemFragment"
+        android:name="com.giovana.peaksolutions.view.CadastroItemFragment"
+        android:label="fragment_cadastroitem"
+        tools:layout="@layout/fragment_cadastroitem" />
+    <fragment
+        android:id="@+id/cadastroVendaFragment"
+        android:name="com.giovana.peaksolutions.view.CadastroVendaFragment"
+        android:label="fragment_cadastro_venda"
+        tools:layout="@layout/fragment_cadastro_venda" />
+    <fragment
+        android:id="@+id/vendasFragment"
+        android:name="com.giovana.peaksolutions.view.VendasFragment"
+        android:label="fragment_vendas"
+        tools:layout="@layout/fragment_vendas" />
+    <fragment
+        android:id="@+id/materiaisFragment"
+        android:name="com.giovana.peaksolutions.view.MateriaisFragment"
+        android:label="fragment_materiais"
+        tools:layout="@layout/fragment_materiais" />
+    <fragment
+        android:id="@+id/cadastroProducaoFragment"
+        android:name="com.giovana.peaksolutions.view.CadastroProducaoFragment"
+        android:label="fragment_cadastro_producao"
+        tools:layout="@layout/fragment_cadastro_producao" />
+    <fragment
+        android:id="@+id/producaoFragment"
+        android:name="com.giovana.peaksolutions.view.ProducaoFragment"
+        android:label="ProducaoFragment" />
 
 </navigation>

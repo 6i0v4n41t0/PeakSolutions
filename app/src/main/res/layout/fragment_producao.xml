@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/black"
-    tools:context=".view.VendasFragment"
+    tools:context=".view.ProducaoFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -19,23 +19,23 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="Vendas"
+            android:text="Produção"
             android:textColor="#2B5B62"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvVendidos"
+            android:id="@+id/rvProduzidos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toTopOf="@+id/btnAdd2"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:listitem="@layout/list_item_produto"
+            tools:listitem="@layout/list_item_producao"
             android:visibility="invisible"/>
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progress2"
+        android:id="@+id/progress3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
-        android:id="@+id/tvErro3"
+        android:id="@+id/tvErro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Texto Erro"
@@ -56,13 +56,14 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAdd2"
+        android:id="@+id/btnAdd3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/adicionar"
         android:layout_marginEnd="10dp"
         android:backgroundTint="#2B5B62"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

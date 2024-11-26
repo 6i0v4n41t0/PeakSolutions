@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/imgMaterial"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_material"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/iconTint"/>
+
+            <TextView
+                android:id="@+id/lblMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Material"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgMaterial"/>
+
+            <TextView
+                android:id="@+id/tvMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Material"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblMaterial"
+                app:layout_constraintBottom_toBottomOf="@id/lblMaterial" />
+
+            <TextView
+                android:id="@+id/lblCor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cor"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@id/lblMaterial"
+                app:layout_constraintStart_toEndOf="@id/imgMaterial"/>
+
+            <TextView
+                android:id="@+id/tvCor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cor"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvCor"
+                app:layout_constraintStart_toEndOf="@id/lblCor"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

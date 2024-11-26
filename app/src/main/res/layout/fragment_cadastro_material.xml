@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.CadastroVendaFragment">
+
+    <TextView
+        android:id="@+id/tvVendas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nome: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Digite o nome do material"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvCor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cor: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtCor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Digite a cor do material"
+        android:inputType="text" />
+
+
+</LinearLayout>

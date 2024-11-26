@@ -3,5 +3,11 @@
     <style name="Base.Theme.PeakSolutions" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorContainer">@color/white</item>
+        <item name="android:statusBarColor">@color/greenLight</item>
+    </style>
+    <style name="iconTint">
+        <item name="android:tint">@color/greenLight</item>
     </style>
 </resources>

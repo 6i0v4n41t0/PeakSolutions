@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgProducao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_producao"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/iconTint"/>
+
+            <TextView
+                android:id="@+id/lblProduto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Produto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgProducao"
+                app:layout_constraintEnd_toStartOf="@id/lblQuantidade"/>
+
+            <TextView
+                android:id="@+id/lblQuantidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantidade"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblProduto"/>
+
+            <TextView
+                android:id="@+id/tvProduto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Produto"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@id/lblProduto"
+                app:layout_constraintStart_toEndOf="@id/imgProducao"
+                app:layout_constraintEnd_toStartOf="@id/tvQuantidade"/>
+
+            <TextView
+                android:id="@+id/tvQuantidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantidade"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/lblQuantidade"
+                app:layout_constraintStart_toEndOf="@id/tvProduto"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
